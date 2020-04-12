@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+		<!--Chris Anderson JavaJam Jobs page website case study page 442 Adding a Form, Web Development & Design Foundations 3/29/2020-->  
+	
+<head>
+	<title>JavaJam Coffee House Jobs</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--configures displays for multiple device screen sizes-->
+	<link rel="stylesheet" href="javajam.css"> <!--Links external style sheet javajam.css-->
+</head>
+
+<body>
+	<div id="wrapper"> <!--applies min, max and overall width, configures background color, center alignment and creates a shadow affect-->
+<header>
+		<h1>JavaJam Coffee House</h1>
+</header>
+
+	<!--JavaJam Navigation links-->		
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="music.html">Music</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+	</ul>
+</nav>	
+
+	<!--Main content of the Web page-->			<!--Information obtained from Web Development & Design Foundations With HTML5-->
+<main>
+		<div id="herojobs"></div> <!--places the image banner herojobs across web page-->
+		<h2>Jobs at JavaJam</h2>
+			<p>Want to work at JavaJam? Fill out the form below to start you application.
+			<br>Required fields are marked with an asterisk (*)</p>
+	<!--Form content of the Web page for submission of job application data--> 
+<form method="post" action="https://webdevbasics.net/scripts/javajam8.php">		<!--server-side processing address for form submission data to display back to user-->
+	<label for="myName">*Name:</label>
+	<input type="text" name="myName" id="myName" required="required">			<!--requires all fields to be filled out before submitting form-->
+	<label for="myEmail">*E-mail:</label>										
+	<input type="email" name="myEmail" id="myEmail" required="required">
+	<label for="myExperience">*Experience:</label>
+	<textarea name="myExperience" id="myExperience" rows="2" cols="20" required="required"></textarea>
+	<input type="submit" value="Apply Now" id="mySubmit">
+</form>
+
+</main>
+	<!--Copyright and contact information-->
+<footer>	
+		Copyright &copy; 2018 JavaJam Coffee House<br>
+		<a href="mailto:tsx82788@gmail.com">Chris@Anderson.com</a>
+</footer>
+</div>
+</body>
+</html>
